@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>TITLE</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		===============================================================================================
+	-->	
+	
+	
+	<body style="text-align:center; max-width:1600px; margin-left:auto; margin-right:auto;">
+	
+		<h2>Ingredients</h2>
+		
+		<section>
+		 
+			
+			<!--DISC-->
+			<div style="display:inline;">
+			
+				<img id="disc" style="width:15%;opacity:1;" src="Disc.png" onclick="Checking(0)">
+				
+			</div>
+			
+			
+			<!--CAN-->			
+			<div style="display:inline; margin-right:30px; margin-left:30px;">
+			
+				<img id="can" style="width:10%;opacity:1;" src="Can.png" onclick="Checking(1)">
+			
+			</div>
+			
+			
+			<!--BINOCULAR-->			
+			<div style="display:inline;">
+			
+				<img id="binocular" style="width:15%;opacity:1;" src="Binocular.png" onclick="Checking(2)">
+			
+			</div>
+			
+			<br>
+			<br>
+			<button type="button" onclick="Reset()">RESET</button>
+			
+		</section>
+		
+
+		
+		<h2>Transforming Substance</h2>
+		
+		<section style="position:relative;">
+
+			<!--This part should be a good example why css is useful!-->
+			<div >
+				
+				<img 
+				id="substance" 
+				
+				style=" width:25%;
+						position:absolute;
+						top:7%;
+						z-index:2;"
+						
+				src="Magic.png" 
+				onclick="Transform()">
+				
+				
+				<img 
+				id="binocular-feature"
+				
+				style=" width: 14%;
+						position: absolute;
+						right: 47%;
+						top: 24%;
+						z-index: 1;
+						visibility:hidden;"
+						
+				src="transformation/Sun.gif" 
+				onclick="Transform()">
+				
+
+				<img 
+				id="can-feature" 
+				style="width:25%; z-index:0; visibility:hidden;" 
+				src="transformation/Klecks.png" 
+				onclick="Transform()">
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				
+				<audio controls 
+				muted
+				id="disc-feature"
+				style="width:25%; visibility:hidden;" 				
+				src="transformation/Chill.wav" 
+				type="audio/wav">
+				
+					ERROR: Your browser doesn´t understand this tag :(!
+				 
+				</audio>
+			
+			</div>
+			
+			
+		</section>
+		
+		
+		<br>
+		<br>
+		
+		<section>
+			
+			<hr width="50%">
+			
+
+			<br>
+			For more explanation please visit - 
+			<a href = "https://github.com/Incrementis/Javascript-save-arguments-into-a-variable-/wiki"> 
+			Hoisting Wiki</a>
+			
+			<br>
+			<br>
+			Music by <a href="https://opengameart.org/content/elevator-music">Alex McCulloch</a>
+		
+		</sectioN>
+
+		
+	</body>
+
+	
+	<script language="javascript" type="text/javascript" src="arguments.js"></script> 
+
+</html>
