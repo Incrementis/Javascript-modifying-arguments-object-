@@ -186,6 +186,7 @@ function Transform()
 					
 					/*
 						ATTENTION:
+						This is where the ingredients feature is activated 
 					*/
 					Substance.Transforming(selectedIngredient, Feature);
 					
